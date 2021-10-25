@@ -31,3 +31,12 @@ The properties it currently extracts are:
 - GPS Latitude Reference
 - GPS Longitude
 - GPS Longitude Reference
+
+## totalvideolength.ps1
+
+Takes in video files and returns the total length as a TimeSpan object. You can pipe in output from `Get-ChildItem` or pass in names or paths as arguments.
+
+```powershell
+dir -recurse *.ts | Get-TotalVideoLength
+Get-TotalVideoLength file.mp4
+```
